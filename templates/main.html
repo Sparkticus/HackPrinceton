@@ -21,8 +21,8 @@
     <script type="text/javascript">
         $(document).ready(function(e) {
         {% for item in data %}
-        icon = '<div id="icon"><img src="http://1.bp.blogspot.com/-ZSobqEWnqko/TvjBTZPbxXI/AAAAAAAAAKM/LRBgHCDfybw/s1600/gulab+jamun1.jpg"/>'
-        icon += '<p> {{ item["title"] }} </p></div>'
+        icon = '<div id="icon"><a href="instructions/{{ item['instr_id'] }}"> <img src="http://1.bp.blogspot.com/-ZSobqEWnqko/TvjBTZPbxXI/AAAAAAAAAKM/LRBgHCDfybw/s1600/gulab+jamun1.jpg"/>'
+        icon += '<p> {{ item["title"] }} </p> </a> </div> '
        // var newInput = document.createElement("input");
        // newInput.type="submit";
        // newInput.name="{{ item['instr_id'] }}" ;
