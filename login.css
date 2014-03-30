@@ -1,0 +1,46 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	
+}
+
+#text {
+	font-family: Source Sans Pro;
+	font-size: 30px;
+	font-weight: bolder;
+	color: black;
+	text-align: center;
+	margin-top: 15%
+}
+
+#input {
+	margin: auto;
+	height: 30%;
+	width: 30%;
+}
+
+#username {
+	margin: 10px 0px 0px;
+	padding: 0px;
+	height: 1.25em;
+	width: 100%;
+	border: 1px solid black;
+}
+
+#password {
+	margin: 10px 0px 0px;
+	padding: 0px;
+	height: 1.25em;
+	width: 100%;
+	border: 1px solid black;
+}
+
+#login {
+	text-align: center;
+	font-family: Source Sans Pro;
+	margin-top: 5px;
+	margin-left: 48%;
+	height: 20px;
+	width: 50px;
+	border: 2px solid black;
+}

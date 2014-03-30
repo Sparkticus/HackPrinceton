@@ -1,0 +1,43 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	border: 1px dashed red;
+}
+
+#text {
+	font-family: Source Sans Pro;
+	font-size: 30px;
+	font-weight: bold;
+	color: gray;
+	text-align: center;
+	margin-top: 15%
+}
+
+#input {
+	margin: auto;
+	height: 30%;
+	width: 30%;
+}
+
+#username {
+	margin: 10px 0px 0px;
+	padding: 0px;
+	height: 1.25em;
+	width: 100%;
+	border: 1px solid black;
+}
+
+#password {
+	margin: 10px 0px 0px;
+	padding: 0px;
+	height: 1.25em;
+	width: 100%;
+	border: 1px solid black;
+}
+
+#button {
+	text-align: center;
+	margin: auto;
+	height: 30px;
+	width: 50px;
+}
