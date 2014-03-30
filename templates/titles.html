@@ -1,0 +1,20 @@
+<!doctype html>
+<title> Select a title</title>
+
+ <form action="instructions" method="post">    
+{% for item in data %}
+ <input type="submit" name= {{ item['instr_id'] }} value={{ item['title'] }} > <br>
+{% endfor %}
+</form>
+
+<! -- 
+<script type="text/javascript">
+    function insert_icon(data) {
+        console.log(data); 
+        div = "<div onclick=
+        $( ".icon" ).append( "<p>Test</p>" );
+    }
+
+</script>
+
+-->
