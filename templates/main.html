@@ -1,8 +1,10 @@
 <!Doctype html>
 <html>
-	<head>
+    <head>
+        <script type="text/javascript" src="static/jquery-2.1.0.min.js"></script>
 		<link type="text/css" rel="stylesheet" href="static/main.css">
-		<title>
+       
+        <title>
 			RECIPES
 		</title>
     </head>
@@ -12,23 +14,26 @@
 				RECIPES
 			</div>
         </div>
-		<div id="first">
-			<img src="http://4.bp.blogspot.com/-hooCqZD66vM/UhvF8SX_vzI/AAAAAAAAAkk/eYBVa5kuvao/s1600/Indian_food.jpg"/>
-			<p>Thali</p>
+        <div id="wrapper">
+        
         </div>
+    </body>
+    <script type="text/javascript">
+        $(document).ready(function(e) {
+        {% for item in data %}
+        icon = '<div id="icon"><img src="http://1.bp.blogspot.com/-ZSobqEWnqko/TvjBTZPbxXI/AAAAAAAAAKM/LRBgHCDfybw/s1600/gulab+jamun1.jpg"/>'
+        icon += '<p> {{ item["title"] }} </p></div>'
+       // var newInput = document.createElement("input");
+       // newInput.type="submit";
+       // newInput.name="{{ item['instr_id'] }}" ;
+       // newInput.value=" {{ item['title'] }} ";
+       // document.getElementById('insert').appendChild(newInput);
+      //  <input type="submit" name= {{ item['instr_id'] }} value={{ item['title'] }} > <br>
+        $('#wrapper').append(icon);  
+        {% endfor %}
 
+        });
+        
+    </script>    
 
-		<div id="second">
-			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXYe5I5ztODR1ys4gfadyh_lhzLZz4sYtZzc6h-sNH3Rki2mK0iA"/>
-			<p>Pav Bhaji</p>
-		</div>
-		<div id="third">
-			<img src="http://go4add.com/photos/recipes/ch.jpg"/>
-			<p>Lassi</p>
-		</div>
-		<div id="fourth">
-			<img src="http://1.bp.blogspot.com/-ZSobqEWnqko/TvjBTZPbxXI/AAAAAAAAAKM/LRBgHCDfybw/s1600/gulab+jamun1.jpg"/>
-			<p>gulab Jamun</p>
-		</div>
-	</body>
 </html>
