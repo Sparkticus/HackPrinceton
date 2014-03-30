@@ -22,7 +22,7 @@
 	width: 100px;
 	margin: auto;
 	text-align: center;
-	font-family: Source Sans Pro;
+    font-family: Chalkduster;
 	font-size: 30px;
 	font-weight: bolder;
 	color: black;
@@ -47,11 +47,10 @@
 	width: 100%;
 }
 
-<!-- #wrapper {
-    display:-webkit-box;
-    -webkit-box-orient:horizontal;
-    -webkit-box-pack:center;
-    height:300px;
-    -webkit-box-align:stretch;
-} -->
-
+#wrapper {
+        display:-webkit-box;
+        -webkit-box-orient:horizontal;
+        -webkit-box-pack:center;
+        height:300px;
+        -webkit-box-align:stretch;
+}
